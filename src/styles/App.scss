@@ -12,7 +12,7 @@
   }
 
   h1.main-div-text {
-    padding-top: 10%;
+    padding-top: 5%;
   }
 
   .main-div-button-set {
@@ -26,7 +26,17 @@
   }
 }
 
-.test {
-  background-color: $secondary;
-  color: $primary;
+.cards-clients {
+  padding: 7  vh 0;
+    background-color: $primary;
+
+  .cards1 {
+    padding-top: 10%;
+    
+     
+      
+    }
+    .card-img-top{
+      background-color: $primary;
+  }
 }
