@@ -1,0 +1,26 @@
+.main-div {
+  background-color: red;
+  width: 100%;
+  padding:7vh 0;
+  h1 {
+    color: $secondary;
+    font-size: 80px;
+    font-weight: 500;
+  }
+
+  h1.main-div-text {
+    padding-top: 5%;
+  }
+
+  .main-div-button-set {
+    margin: 5% 0;
+  }
+
+  @media(max-width: 370px) {
+    h2 {
+      font-size: 7vw;
+    }
+
+  }
+
+}
