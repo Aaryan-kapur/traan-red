@@ -1,5 +1,5 @@
 @import "fonts.scss";
-@import 'colors.scss';
+@import "colors.scss";
 
 * {
   margin: 0;
@@ -10,9 +10,29 @@ body {
   color: $secondary;
   background-color: $primary;
   font-family: $primary-font;
+  background-image: url("https://www.colorhexa.com/ff0000.png");
+  background-repeat: no-repeat;
+  background-size: 100% 65vh;
+  background-color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main-div .image-main-div {
+  height: 55vh;
+  width: 100%;
+}
+h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+}
+h1.main-div-text {
+
+  padding-top:5%;
+}
+
+.main-div-additional{
+  margin-top:0%;
+}
+.main-div-button-set{
+  margin-top:8%;
 }
