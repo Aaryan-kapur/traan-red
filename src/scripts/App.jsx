@@ -1,13 +1,21 @@
 import React, { Component } from "react";
 import graphic from "../assests/graphic.svg"
+class Cards extends Component{
+  render(){
+    return(
+      <div className="test">Hola</div>
+    )
+  }
+}
 class Upper extends Component {
   render() {
     return (
       <div className="main-div">
         <div className="container">
-          <h1 className="main-div-text">Traan</h1>
+          
           <div className="row">
             <div className="main-div-additional responsive-font-size col-sm-12 col-m-6 col-lg-6">
+            <h1 className="main-div-text">Traan</h1>
               <h2 className="text-break">
                 {" "}
                 Healing in a matter of time, but it is sometimes also a matter
@@ -27,7 +35,7 @@ class Upper extends Component {
               </button>
             </div>
             <div className="main-div-graphic responsive-font-size col-sm-12 col-m-6 col-lg-6">
-            <img src={graphic} alt=""/>
+            <img className="graphic" src={graphic} alt=""/>
             </div>
           </div>
         </div>
@@ -41,6 +49,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Upper/>
+        <Cards />
       </React.Fragment>
     );
   }

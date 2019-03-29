@@ -1,7 +1,10 @@
+@import "fonts.scss";
+@import "colors.scss";
+
 .main-div {
-  background-color: red;
+  background-color: $primary;
   width: 100%;
-  padding:7vh 0;
+  padding: 7vh 0;
   h1 {
     color: $secondary;
     font-size: 80px;
@@ -9,18 +12,21 @@
   }
 
   h1.main-div-text {
-    padding-top: 5%;
+    padding-top: 10%;
   }
 
   .main-div-button-set {
     margin: 5% 0;
   }
 
-  @media(max-width: 370px) {
+  @media (max-width: 370px) {
     h2 {
       font-size: 7vw;
     }
-
   }
+}
 
+.test {
+  background-color: $secondary;
+  color: $primary;
 }
