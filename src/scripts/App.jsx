@@ -1,10 +1,44 @@
 import React, { Component } from "react";
-import graphic from "../assests/graphic.svg"
-class Cards extends Component{
-  render(){
-    return(
-      <div className="test">Hola</div>
-    )
+import graphic from "../assests/graphic.svg";
+class Cards extends Component {
+  render() {
+    return (<div className='in'>
+      <div className="card card-cascade wider">
+        <div className="view view-cascade overlay">
+          <img
+            className="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg"
+          />
+          <a href="#!">
+            <div className="mask rgba-white-slight" />
+          </a>
+
+          <div className="card-body card-body-cascade text-center">
+            <h4 className="card-title">
+              <strong>Alison Belmont</strong>
+            </h4>
+            <h5 className="blue-text pb-2">
+              <strong>Graffiti Artist</strong>
+            </h5>
+            <p className="card-text">
+              Sed ut perspiciatis unde omnis iste natus sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam.{" "}
+            </p>
+
+            <a className="px-2 fa-lg li-ic">
+              <i className="fab fa-linkedin-in" />
+            </a>
+            <a className="px-2 fa-lg tw-ic">
+              <i className="fab fa-twitter" />
+            </a>
+            <a className="px-2 fa-lg fb-ic">
+              <i className="fab fa-facebook-f" />
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    );
   }
 }
 class Upper extends Component {
@@ -12,10 +46,9 @@ class Upper extends Component {
     return (
       <div className="main-div">
         <div className="container">
-          
           <div className="row">
             <div className="main-div-additional responsive-font-size col-sm-12 col-m-6 col-lg-6">
-            <h1 className="main-div-text">Traan</h1>
+              <h1 className="main-div-text">Traan</h1>
               <h2 className="text-break">
                 {" "}
                 Healing in a matter of time, but it is sometimes also a matter
@@ -35,7 +68,7 @@ class Upper extends Component {
               </button>
             </div>
             <div className="main-div-graphic responsive-font-size col-sm-12 col-m-6 col-lg-6">
-            <img className="graphic" src={graphic} alt=""/>
+              <img className="graphic" src={graphic} alt="" />
             </div>
           </div>
         </div>
@@ -48,7 +81,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Upper/>
+        <Upper />
         <Cards />
       </React.Fragment>
     );
