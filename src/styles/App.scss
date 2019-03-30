@@ -115,3 +115,17 @@
 
 }
 }
+.page-footer{
+  background-color: $primary !important;
+  font-family: Montserrat, sans-serif;
+  .footer-copyright{
+    a{
+      text-decoration: underline;
+    }
+
+  }
+  .list-unstyled{
+    line-height:1.8;
+    
+  }
+}
