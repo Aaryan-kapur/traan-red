@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import graphic from "../assests/graphic.svg"
-import card1 from "../assests/Card1.svg";
-import card2 from "../assests/Card2.svg"
-import card3 from "../assests/Card3.svg"
+
+import cardSources from './sources';
+
 
 class Card extends Component{
   render(){
@@ -39,28 +39,7 @@ class Card extends Component{
   }
 }
 
-let sources = [
-  {
-    title: "Hospitals",
-    card: card1,
-    textBelow: 'Lorem Ipsum',
-    cardText:"Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
-  },
-  {
-    title: "Doctors",
-    card: card2,
-    textBelow: 'Lorem Ipsum',
-    cardText: "Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
-  },
-  {
-    title: "Volunteers",
-    card: card3,
-    textBelow: 'Lorem Ipsum',
-    cardText: "Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
-  }
-];
-
-const cardItems = sources.map((source =>
+const cardItems = cardSources.map((source =>
   <Card title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} />
 ))
 
