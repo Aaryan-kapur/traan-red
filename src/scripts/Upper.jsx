@@ -14,18 +14,24 @@ class Upper extends Component {
                 Healing in a matter of time, but it is sometimes also a matter
                 of opportunity.
               </h2>
+              <a href="https://traan.in/traan_contact/index.html">
               <button
                 type="button"
                 className="main-div-button-set btn btn-dark btn-outline-white waves-effect"
               >
+              
                 Contact-Us
               </button>
+              </a>
+              <a href="https://traan.in/traan_contact/index.html">
               <button
                 type="button"
                 className="main-div-button-set btn  waves-effect"
               >
                 Know More{" "}
+                
               </button>
+              </a>
             </div>
             <div className="main-div-graphic responsive-font-size col-sm-12 col-m-6 col-lg-6">
               <img className="graphic" src={graphic} alt="" />
