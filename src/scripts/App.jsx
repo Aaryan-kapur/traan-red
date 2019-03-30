@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import graphic from "../assests/graphic.svg"
 import card1 from "../assests/Card1.svg";
@@ -14,7 +16,7 @@ class Cards extends Component{
       <div className="card card-cascade wider">
 
   <div className="view view-cascade overlay">
-    <img  className="card-img-top" src={card1} alt="Card image cap" />
+    <img  className="card-img-top" src={card1} />
     <a href="#!">
       <div className="mask rgba-white-slight"></div>
     </a>
@@ -41,7 +43,7 @@ class Cards extends Component{
       <div className="card card-cascade wider">
 
   <div className="view view-cascade overlay">
-    <img  className="card-img-top" src={card2} alt="Card image cap" />
+    <img  className="card-img-top" src={card2} />
     <a href="#!">
       <div className="mask rgba-white-slight"></div>
     </a>
@@ -69,7 +71,7 @@ class Cards extends Component{
       <div className="card card-cascade wider">
 
   <div className="view view-cascade overlay">
-    <img  className="card-img-top" src={card3} alt="Card image cap" />
+    <img  className="card-img-top" src={card3}  />
     <a href="#!">
       <div className="mask rgba-white-slight"></div>
     </a>
