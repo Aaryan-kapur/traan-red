@@ -61,10 +61,12 @@
 .Services {
   background-color: $secondary;
   color: black;
-  
+  padding: 3vh 0;
+  .row{
+    margin: 4vh 0;
+  }
   .Services-cards {
-    top: 50%;
-    transform: translateY(-50%);
+    
     box-shadow: none;
     .card-title {
       font-size: calc(1.8vw);

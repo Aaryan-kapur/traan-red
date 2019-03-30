@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import badal from "../assests/InititalBadal1.svg";
+import badal from "../assests/red2.svg";
+import badal2 from "../assests/red3.svg";
 import serviceSources from './servicesSources'
 
 class Service extends Component {
@@ -39,31 +40,31 @@ class Services extends Component {
            
             
            
-            <div class="col-6 col-sm-6 col-md-7 col-lg-7 ">
-              <div class="card Services-cards">
-                <h4 class="card-title">
+            <div className="col-6 col-sm-6 col-md-7 col-lg-7 ">
+              <div className="card Services-cards">
+                <h4 className="card-title">
                   <a>Easiest and fastest access to emergency services <sup>*</sup> </a>
                 </h4>
-                <p class="card-text">
+                <p className="card-text">
                   Our web-application ensures that you get access to emergency services in the fastest and easiest way possible
                 </p>
               </div>
             </div>
-            <div class="card-image col-5 col-sm-5 col-md-5 col-lg-5">
+            <div className="card-image col-5 col-sm-5 col-md-5 col-lg-5">
               <img src={badal} alt=" " />
             </div>
            </div>
            
            <div className="row">
             <div className="card-image col-5 col-sm-5 col-md-5 col-lg-5">
-              <img src={badal} alt=" " />
+              <img src={badal2} alt=" " />
             </div>
             <div className="col-6 col-sm-6 col-md-7 col-lg-7">
-              <div class="card Services-cards">
-                <h4 class="card-title">
+              <div className="card Services-cards">
+                <h4 className="card-title">
                   <a>Fastest emergency response time<sup>*</sup></a>
                 </h4>
-                <p class="card-text">
+                <p className="card-text">
                   Our huge network of hospitals and ambulance provoiders ensure that you get to a medical center as soon as possible!
                 </p>
               </div>
