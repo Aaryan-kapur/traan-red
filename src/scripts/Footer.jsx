@@ -39,16 +39,16 @@ class Footer extends Component {
 
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#!">Hospitals</a>
+                    <a href="https://traan.in/register-hospital">Hospitals</a>
                   </li>
                   <li>
-                    <a href="#!">Volunteers</a>
+                    <a href="https://traan.in/register-volunteer">Volunteers</a>
                   </li>
                   <li>
-                    <a href="#!">Doctors</a>
+                    <a href="https://traan.in/register-hospital">Doctors</a>
                   </li>
                   <li>
-                    <a href="#!">Ambulance Providers</a>
+                    <a href="https://traan.in/register-hospital">Ambulance Providers</a>
                   </li>
                 </ul>
               </div>
@@ -56,7 +56,7 @@ class Footer extends Component {
           </div>
           <div class="footer-copyright text-center py-3">
             © 2019 Copyright: powered by
-            <a href="https://mdbootstrap.com/education/bootstrap/">
+            <a href="https://perplexed.tech">
               {" "}
               perplexed.tech
             </a>
