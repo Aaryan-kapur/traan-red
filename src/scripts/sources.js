@@ -6,20 +6,25 @@ const cardSources =  [
   {
     title: "Hospitals",
     card: card1,
-    textBelow: 'Lorem Ipsum',
-    cardText:"Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
+    textBelow: 'Register Here',
+    cardText:"We have partnered with various hospitals to create such a network that can cater to all a patient requires!  join us today",
+    cardLink:"https://traan.in/register-hospital"
   },
   {
     title: "Doctors",
     card: card2,
-    textBelow: 'Lorem Ipsum',
-    cardText: "Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
+    textBelow: 'Register Here',
+    cardText: "Various independent doctors and clinics have partnered with us to cater to all needs of the patient! join us today",
+    cardLink:"https://traan.in/register-hospital"
+
   },
   {
     title: "Volunteers",
     card: card3,
-    textBelow: 'Lorem Ipsum',
-    cardText: "Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
+    textBelow: 'Register Here',
+    cardText: "Several responsible citizens have come forward, to help us in helping patients, when help needed the most! join us today",
+    cardLink:"https://traan.in/register-volunteer"
+
   }
 ];
 

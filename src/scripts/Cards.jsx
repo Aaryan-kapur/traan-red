@@ -3,6 +3,7 @@
 
 import React, { Component } from "react";
 import cardSources from './sources';
+import { SourceMapConsumer } from "C:/Users/personal-ak/AppData/Local/Microsoft/TypeScript/3.2/node_modules/source-map/source-map";
 
 class Card extends Component {
     render() {
@@ -21,7 +22,7 @@ class Card extends Component {
 
                     <h4 className="card-title"><strong>{this.props.title}</strong></h4>
 
-                    <h5 className="text-below pb-2"><strong>{this.props.textBelow}</strong></h5>
+                    <h5 className="text-below pb-2"><strong><a href={this.props.cardsLink}>{this.props.textBelow}</a></strong></h5>
 
                     <p className="card-text">{this.props.cardText}</p>
 
@@ -38,7 +39,7 @@ class Card extends Component {
 }
 
 const cardItems = cardSources.map((source =>
-    <Card title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} />
+    <Card title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} cardsLink={source.cardLink}/>
 ))
 
 class Cards extends Component {
