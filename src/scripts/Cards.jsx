@@ -3,7 +3,6 @@
 
 import React, { Component } from "react";
 import cardSources from './sources';
-import { SourceMapConsumer } from "C:/Users/personal-ak/AppData/Local/Microsoft/TypeScript/3.2/node_modules/source-map/source-map";
 
 class Card extends Component {
     render() {
