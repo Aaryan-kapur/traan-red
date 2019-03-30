@@ -52,15 +52,18 @@
   }
 }
 .cards-clients {
-  padding: 7  vh 0;
-    background-color: $primary;
-
-  .cards1 {
-    padding-top: 10%;
-    
-     
-      
-    }
+  background-color: $primary;
+  color: $secondary;
+  .card1{
+    margin-top:3vh;
+    margin-bottom: 3vh;
+  }
+  .card-title{
+    color: $primary;
+  }  
+  .text-below{
+    color:$tertiary;
+  }
     .card-img-top{
       background-color: $primary;
   }

@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import graphic from "../assests/graphic.svg"
+import card1 from "../assests/Card1.svg";
+import card2 from "../assests/Card2.svg"
+import card3 from "../assests/Card3.svg"
+
 class Cards extends Component{
   render(){
     return(
@@ -10,7 +14,7 @@ class Cards extends Component{
       <div className="card card-cascade wider">
 
   <div className="view view-cascade overlay">
-    <img  className="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" alt="Card image cap" />
+    <img  className="card-img-top" src={card1} alt="Card image cap" />
     <a href="#!">
       <div className="mask rgba-white-slight"></div>
     </a>
@@ -19,11 +23,11 @@ class Cards extends Component{
  
   <div className="card-body card-body-cascade text-center">
 
-    <h4 className="card-title"><strong>Alison Belmont</strong></h4>
+    <h4 className="card-title"><strong>Hospitals</strong></h4>
    
-    <h5 className="blue-text pb-2"><strong>Graffiti Artist</strong></h5>
+    <h5 className="text-below pb-2"><strong>Lorem Ipsum</strong></h5>
     
-    <p className="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
+                  <p className="card-text">Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam</p>
 
   </div>
     <a className="px-2 fa-lg li-ic"><i className="fab fa-linkedin-in"></i></a>
@@ -37,7 +41,7 @@ class Cards extends Component{
       <div className="card card-cascade wider">
 
   <div className="view view-cascade overlay">
-    <img  className="card-img-top" src={graphic} alt="Card image cap" />
+    <img  className="card-img-top" src={card2} alt="Card image cap" />
     <a href="#!">
       <div className="mask rgba-white-slight"></div>
     </a>
@@ -46,11 +50,11 @@ class Cards extends Component{
  
   <div className="card-body card-body-cascade text-center">
 
-    <h4 className="card-title"><strong>Alison Belmont</strong></h4>
+    <h4 className="card-title"><strong>Doctors</strong></h4>
    
-    <h5 className="blue-text pb-2"><strong>Graffiti Artist</strong></h5>
+    <h5 className="text-below pb-2"><strong>Lorem Ipsum</strong></h5>
     
-    <p className="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
+    <p className="card-text">Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam</p>
 
   </div>
     <a className="px-2 fa-lg li-ic"><i className="fab fa-linkedin-in"></i></a>
@@ -65,7 +69,7 @@ class Cards extends Component{
       <div className="card card-cascade wider">
 
   <div className="view view-cascade overlay">
-    <img  className="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" alt="Card image cap" />
+    <img  className="card-img-top" src={card3} alt="Card image cap" />
     <a href="#!">
       <div className="mask rgba-white-slight"></div>
     </a>
@@ -74,11 +78,11 @@ class Cards extends Component{
  
   <div className="card-body card-body-cascade text-center">
 
-    <h4 className="card-title"><strong>Alison Belmont</strong></h4>
+    <h4 className="card-title"><strong>Volunteers</strong></h4>
    
-    <h5 className="blue-text pb-2"><strong>Graffiti Artist</strong></h5>
+    <h5 className="text-below pb-2"><strong>Lorem Ipsum</strong></h5>
     
-    <p className="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
+                  <p className="card-text">Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam</p>
 
   </div>
     <a className="px-2 fa-lg li-ic"><i className="fab fa-linkedin-in"></i></a>
