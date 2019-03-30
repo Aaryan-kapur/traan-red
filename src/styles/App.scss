@@ -43,6 +43,9 @@
     a{
     color:$tertiary;
     }
+    a:hover { 
+      color: #4066FF;
+    }
   }
     .card-img-top{
       background-color: $primary;
