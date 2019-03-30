@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import Upper from './Upper';
 import Cards from './Cards';
+import Services from './Services';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <React.Fragment>
         <Upper />
         <Cards />
+        <Services />
       </React.Fragment>
     );
   }
