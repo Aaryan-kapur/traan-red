@@ -5,7 +5,6 @@ import graphic from "../assests/graphic.svg"
 
 import cardSources from './sources';
 
-
 class Card extends Component{
   render(){
     return <div className="card1 col-sm-12 col-m-4 col-lg-4">
@@ -47,7 +46,9 @@ class Cards extends Component{
   render(){
     return (
       <div className="cards-clients">
+        
         <div className="container">
+        <h1 className='heading'>Our Users</h1>
           <div className="row">
             {cardItems}       
           </div>
