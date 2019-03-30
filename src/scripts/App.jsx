@@ -6,102 +6,75 @@ import card1 from "../assests/Card1.svg";
 import card2 from "../assests/Card2.svg"
 import card3 from "../assests/Card3.svg"
 
+class Card extends Component{
+  render(){
+    return <div className="card1 col-sm-12 col-m-4 col-lg-4">
+      <div className="card card-cascade wider">
+
+        <div className="view view-cascade overlay">
+          <img className="card-img-top" src={this.props.card} />
+          <a href="#!">
+            <div className="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+
+        <div className="card-body card-body-cascade text-center">
+
+          <h4 className="card-title"><strong>{this.props.title}</strong></h4>
+
+          <h5 className="text-below pb-2"><strong>{this.props.textBelow}</strong></h5>
+
+          <p className="card-text">{this.props.cardText}</p>
+
+        </div>
+        <a className="px-2 fa-lg li-ic"><i className="fab fa-linkedin-in"></i></a>
+        <a className="px-2 fa-lg tw-ic"><i className="fab fa-twitter"></i></a>
+        <a className="px-2 fa-lg fb-ic"><i className="fab fa-facebook-f"></i></a>
+
+      </div>
+
+    </div>
+
+  }
+}
+
+let sources = [
+  {
+    title: "Hospitals",
+    card: card1,
+    textBelow: 'Lorem Ipsum',
+    cardText:"Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
+  },
+  {
+    title: "Doctors",
+    card: card2,
+    textBelow: 'Lorem Ipsum',
+    cardText: "Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
+  },
+  {
+    title: "Volunteers",
+    card: card3,
+    textBelow: 'Lorem Ipsum',
+    cardText: "Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam"
+  }
+];
+
+const cardItems = sources.map((source =>
+  <Card title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} />
+))
+
 class Cards extends Component{
   render(){
-    return(
+    return (
       <div className="cards-clients">
-      <div className="container">
-      <div className="row">
-      <div className="card1 col-sm-12 col-m-4 col-lg-4">
-      <div className="card card-cascade wider">
-
-  <div className="view view-cascade overlay">
-    <img  className="card-img-top" src={card1} />
-    <a href="#!">
-      <div className="mask rgba-white-slight"></div>
-    </a>
-  </div>
-
- 
-  <div className="card-body card-body-cascade text-center">
-
-    <h4 className="card-title"><strong>Hospitals</strong></h4>
-   
-    <h5 className="text-below pb-2"><strong>Lorem Ipsum</strong></h5>
-    
-                  <p className="card-text">Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam</p>
-
-  </div>
-    <a className="px-2 fa-lg li-ic"><i className="fab fa-linkedin-in"></i></a>
-    <a className="px-2 fa-lg tw-ic"><i className="fab fa-twitter"></i></a>
-    <a className="px-2 fa-lg fb-ic"><i className="fab fa-facebook-f"></i></a>
-
-  </div>
-
-</div>
-<div className="card1 col-sm-12 col-m-4 col-lg-4">
-      <div className="card card-cascade wider">
-
-  <div className="view view-cascade overlay">
-    <img  className="card-img-top" src={card2} />
-    <a href="#!">
-      <div className="mask rgba-white-slight"></div>
-    </a>
-  </div>
-
- 
-  <div className="card-body card-body-cascade text-center">
-
-    <h4 className="card-title"><strong>Doctors</strong></h4>
-   
-    <h5 className="text-below pb-2"><strong>Lorem Ipsum</strong></h5>
-    
-    <p className="card-text">Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam</p>
-
-  </div>
-    <a className="px-2 fa-lg li-ic"><i className="fab fa-linkedin-in"></i></a>
-    <a className="px-2 fa-lg tw-ic"><i className="fab fa-twitter"></i></a>
-    <a className="px-2 fa-lg fb-ic"><i className="fab fa-facebook-f"></i></a>
-
-  </div>
-
-</div>
-
-<div className="card1 col-sm-12 col-m-4 col-lg-4">
-      <div className="card card-cascade wider">
-
-  <div className="view view-cascade overlay">
-    <img  className="card-img-top" src={card3}  />
-    <a href="#!">
-      <div className="mask rgba-white-slight"></div>
-    </a>
-  </div>
-
- 
-  <div className="card-body card-body-cascade text-center">
-
-    <h4 className="card-title"><strong>Volunteers</strong></h4>
-   
-    <h5 className="text-below pb-2"><strong>Lorem Ipsum</strong></h5>
-    
-                  <p className="card-text">Lorem consectetur adipisicing elit. Magni possimus officiis, ipsam saepe dignissimos veniam minus! Id laboriosam</p>
-
-  </div>
-    <a className="px-2 fa-lg li-ic"><i className="fab fa-linkedin-in"></i></a>
-    <a className="px-2 fa-lg tw-ic"><i className="fab fa-twitter"></i></a>
-    <a className="px-2 fa-lg fb-ic"><i className="fab fa-facebook-f"></i></a>
-
-  </div>
-
-</div>
-
-
-
+        <div className="container">
+          <div className="row">
+            {cardItems}       
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-     
-    )
+    );
   }
 }
 class Upper extends Component {
