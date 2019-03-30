@@ -60,8 +60,16 @@
 }
 .Services {
   background-color: $secondary;
-  color: black;
+  color: $tertiary;
   padding: 3vh 0;
+  
+    .heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 4em;
+    color: $tertiary;
+  }
+
   .row{
     margin: 4vh 0;
   }

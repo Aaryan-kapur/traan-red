@@ -33,6 +33,8 @@ class Services extends Component {
     return (
       <div className="Services">
         <div className="container">
+          <h1 className='heading'>Our Services</h1>
+
           <div className="row">
                 {serviceItems}
             </div>
