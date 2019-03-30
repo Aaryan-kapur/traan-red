@@ -28,7 +28,7 @@ class Upper extends Component {
                 type="button"
                 className="main-div-button-set btn  waves-effect"
               >
-                Know More{" "}
+                I am in an Emergency{" "}
                 
               </button>
               </a>

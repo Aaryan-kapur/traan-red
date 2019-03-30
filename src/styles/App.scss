@@ -30,35 +30,78 @@
 .cards-clients {
   padding: 2vh 0;
 
-  background-color: $secondary  ;
+  background-color: $secondary;
   color: $secondary;
-  .card1{
-    margin-top:3vh;
+  .card1 {
+    margin-top: 3vh;
     margin-bottom: 3vh;
   }
-  .card-title{
+  .card-title {
     color: $primary;
-  }  
-  .text-below{
-    a{
-    color:$tertiary;
+  }
+  .text-below {
+    a {
+      color: $tertiary;
     }
-    a:hover { 
-      color: #4066FF;
+    a:hover {
+      color: #4066ff;
     }
   }
-    .card-img-top{
-      background-color: $primary;
+  .card-img-top {
+    background-color: $primary;
   }
 
-  .heading{
+  .heading {
     text-align: center;
     font-weight: 500;
-    font-size:4em;
-    color:$tertiary;
+    font-size: 4em;
+    color: $tertiary;
   }
 }
-.Services{
-  background-color:$secondary; 
-  color:black;
+.Services {
+  background-color: $secondary;
+  color: black;
+  
+  .Services-cards {
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: none;
+    .card-title {
+      font-size: calc(1.8vw);
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: calc(1.4vw);
+      font-weight: 400;
+  }
+ 
+  }
+  @media only screen and (max-width: 600px){
+    .Services-cards {
+     
+      .card-title {
+        font-size:1em;
+        font-weight: 600;
+      }
+      .card-text {
+        font-size: 1em;
+        font-weight: 400;
+    }
+  }
+  
+}
+@media only screen and (max-width: 1300px) and (min-width: 601px){
+  .Services-cards {
+   
+    .card-title {
+      font-size:1.5em;
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: 1.3em;
+      font-weight: 400;
+  }
+}
+
+}
 }
