@@ -38,7 +38,7 @@ class Card extends Component {
 }
 
 const cardItems = cardSources.map((source =>
-    <Card title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} cardsLink={source.cardLink}/>
+    <Card key={source.title} title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} cardsLink={source.cardLink}/>
 ))
 
 class Cards extends Component {

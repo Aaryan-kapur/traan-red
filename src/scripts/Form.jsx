@@ -19,8 +19,9 @@ class Form extends Component {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.981814579435!2d77.58213141519587!3d28.44996458249019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cbf94deb6bc39%3A0x7ba6bedc9a2b537f!2sBennett+University!5e0!3m2!1sen!2sin!4v1554054558691!5m2!1sen!2sin"
               width="600"
               height="500vh"
-              frameborder="0"
-              allowfullscreen
+              frameBorder="0"
+              allowFullScreen
+              title='map'
             />
           </div>
           <div className="card-form col-sm-12 col-md-6 col-lg-6">

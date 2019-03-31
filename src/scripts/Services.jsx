@@ -11,11 +11,11 @@ class Service extends Component {
           <img src={this.props.image} alt=" " />
         </div>
         <div className="col-6 col-sm-7 col-md-7 col-lg-7">
-          <div class="card Services-cards">
-            <h4 class="card-title">
+          <div className="card Services-cards">
+            <h4 className="card-title">
               <a>{this.props.title}</a>
             </h4>
-            <p class="card-text">{this.props.cardText}</p>
+            <p className="card-text">{this.props.cardText}</p>
           </div>
         </div>
       </React.Fragment>
@@ -25,6 +25,7 @@ class Service extends Component {
 
 const serviceItems = serviceSources.map(source => (
   <Service
+    key={source.title}
     image={source.image}
     title={source.title}
     cardText={source.cardText}
