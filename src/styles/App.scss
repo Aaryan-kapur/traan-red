@@ -118,6 +118,14 @@
 .page-footer{
   background-color: $primary !important;
   font-family: Montserrat, sans-serif;
+  p{
+    line-height: 1;
+  }  
+  .credit-contents{
+      position: absolute;
+      bottom: 0;
+      font-size: 0.7em;
+    }
   .footer-copyright{
     a{
       text-decoration: underline;

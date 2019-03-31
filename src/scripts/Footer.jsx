@@ -11,6 +11,9 @@ class Footer extends Component {
                 <p>
                 The fastest and most reliable support for medical emergencies.
                 </p>
+                <div class='credit-contents col-md-6 mt-md-0 mt-md-0'>
+                  <a>Credit Contents</a>
+                </div>
               </div>
 
               <hr class="clearfix w-100 d-md-none pb-3" />
@@ -60,6 +63,8 @@ class Footer extends Component {
               {" "}
               perplexed.tech
             </a>
+            {/* <p>Credits</p> */}
+            {/* <br/> */}
           </div>
         </div>
       </footer>
