@@ -5,6 +5,8 @@ import Upper from "./Upper";
 import Cards from "./Cards";
 import Services from "./Services";
 import Footer from "./Footer";
+import Form from "./Form";
+
 
 class App extends Component {
   render() {
@@ -14,6 +16,7 @@ class App extends Component {
         <Cards />
 
         <Services />
+        <Form />
         <Footer />
       </React.Fragment>
     );

@@ -137,3 +137,26 @@
     
   }
 }
+.form{
+  background-color: $primary;
+  height:55vh;
+  ::label{
+     color:white;
+  }
+}
+.text-white{
+  color:white;
+}
+.form-main{
+  background-color: $secondary;
+}
+.card-form {
+}
+.map{
+width:100%;
+background-color: $primary;
+}
+
+form label{
+  color:white !important;
+}
