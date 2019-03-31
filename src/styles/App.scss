@@ -153,10 +153,18 @@
 .card-form {
 }
 .map{
-width:100%;
+width:auto;
 background-color: $primary;
+}
+
+input::placeholder, input::-webkit-input-placeholder{
+  color: white;
 }
 
 form label{
   color:white !important;
+}
+
+.forms{
+  padding:3vh 0;
 }
