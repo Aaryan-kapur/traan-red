@@ -6,7 +6,7 @@ class Footer extends Component {
         <div class="text-center text-md-left">
           <div className="container">
             <div class="row">
-              <div class="col-md-6 mt-md-0 mt-3">
+              <div class="col-md-3 mt-md-0 mt-3">
                 <h2 class="text-uppercase">We are traan</h2>
                 <p>
                 The fastest and most reliable support for medical emergencies.
@@ -36,7 +36,24 @@ class Footer extends Component {
                   </li>
                 </ul>
               </div>
+              <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Media Handles</h5>
 
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="#!">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#!">LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="#!">Twitter</a>
+                  </li>
+                </ul>
+              </div>
               <div class="col-md-3 mb-md-0 mb-3">
                 <h5 class="text-uppercase">Join US</h5>
 
