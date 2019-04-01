@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import map from "../assests/map.png";
+import { MDBInput } from "mdbreact";
+
 class Form extends Component {
 render(){
     return <div className="container form">
@@ -9,68 +11,67 @@ render(){
 
     <section>
 
-<h2 class="h1-responsive font-weight-bold text-left">Fill the form</h2>
-<p class="text-left w-responsive">It's Easy, Promise</p>
+<h2 className="h1-responsive font-weight-bold text-left">Fill the form</h2>
+<p className="text-left secondary-text">It's Easy, Promise</p>
+<form id="" name="contact-form">
+<div className="row ">
+<div className="col-md-6 form-house">
+                    <div className="md-form">
+                        
+                        <MDBInput type="text" id="name" name="name" className="label_input" label="Name" />
 
-<div class="row">
-
-    <div class="col-md-9 mb-md-0">
-        <form id="contact-form" name="contact-form">
-
-            <div class="row">
-
-                <div class="col-md-6">
-                    <div class="md-form mb-0 ">
-                        <input type="text" id="name" name="name" class="form-control" />
-                        <label for="name" class="label_input">Your name</label>
+                       
+                    </div>
+                </div>
+    
+                <div className="col-md-6 form-email ">
+                    <div className="md-form">
+                      
+                        <MDBInput type="email" id="email" name="email" className="label_input" label="E-mail" />
                     </div>
                 </div>
 
-                <div class="col-md-6 ">
-                    <div class="md-form mb-0">
-                        <input type="text" id="email" name="email" class="form-control" />
-                        <label for="email" class="label_input">Your email</label>
+                </div>
+                <div className="row">
+                <div className="col-md-12 form-house">
+                    <div className="md-form">
+                        
+                        <MDBInput type="text" id="subject" name="subject" className="label_input" label="Subject" />
+
                     </div>
                 </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="md-form mb-0">
-                        <input type="text" id="subject" name="subject" class="form-control" />
-                        <label for="subject" class="label_input">Subject</label>
-                    </div>
                 </div>
-            </div>
+                <div className="row ">
 
-            <div class="row">
+                <div className="col-md-12 form-house">
 
-                <div class="col-md-12">
+                    <div className="md-form">
+                        
+                        <MDBInput type="text" id="message" name="message" className="label_input" label="Message" />
 
-                    <div class="md-form">
-                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                        <label for="message"  class="label_input">Your message</label>
                     </div>
 
                 </div>
             </div>
 
-        </form>
-
-        <div class="text-center text-md-left">
-            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+</form>
+    </section>
+<div className="text-center  form-house ">
+            <a className="btn btn-danger  " onclick="document.getElementById('contact-form').submit();">Send</a>
         </div>
-        <div class="status"></div>
+        <div className="status"></div>
     </div>
+   
+     
+   
 
-    </div>
+    
 
-</section>
-   </div>
 
-    <div className="col-sm-12 col-md-3 col-lg-3">
-    {/* <img src={map} className="map-image" /> */}
+
+
+    <div className="col-sm-12 col-md-6 col-lg-6">
+    <img src={map} className="map-image" />
     </div>  
 
     </div>

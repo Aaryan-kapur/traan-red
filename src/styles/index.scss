@@ -18,3 +18,41 @@ body {
     max-width: 1300px;
   }
 }
+label{
+  color:$secondary;
+}
+#name , #email, #subject, #message{
+  color:$secondary;
+}
+.form-house{
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+  margin-top:3%;
+}
+.form-email{
+  margin-top:3%;
+
+}
+
+@media  (max-width: 770px) {
+  
+  .form-email{
+    
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+}
+
+.secondary-text{
+  font-size:2vh;
+}
+.map-image{
+  width:100%;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+}
