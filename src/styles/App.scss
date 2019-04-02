@@ -1,0 +1,163 @@
+@import "fonts.scss";
+@import "colors.scss";
+
+.main-div {
+  background-color: $primary;
+  width: 100%;
+  padding: 3.5vh 0;
+
+  h1 {
+    color: $secondary;
+    font-size: calc(3em + 3vw);
+    font-weight: 500;
+  }
+
+  h1.main-div-text {
+    padding-top: 5%;
+  }
+
+  .main-div-button-set {
+    margin: 5% 0;
+  }
+
+  @media (max-width: 370px) {
+    h2 {
+      font-size: 7vw;
+    }
+  }
+}
+
+.cards-clients {
+  padding: 2vh 0;
+
+  background-color: $secondary;
+  color: $secondary;
+  .card1 {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  .card-title {
+    color: $primary;
+  }
+  .text-below {
+    a {
+      color: $tertiary;
+    }
+    a:hover {
+      color: #4066ff;
+    }
+  }
+  .card-img-top {
+    background-color: $primary;
+  }
+
+  .heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: calc(2em + 4vw);
+    color: $tertiary;
+  }
+}
+.Services {
+  background-color: $secondary;
+  color: $tertiary;
+  padding: 3vh 0;
+  
+    .heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: calc(2em + 4vw);
+    color: $tertiary;
+  }
+
+  .row{
+    margin: 4vh 0;
+  }
+  .Services-cards {
+    
+    box-shadow: none;
+    .card-title {
+      font-size: calc(1.8vw);
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: calc(1.4vw);
+      font-weight: 400;
+  }
+ 
+  }
+  @media only screen and (max-width: 600px){
+    .Services-cards {
+     
+      .card-title {
+        font-size:1em;
+        font-weight: 600;
+      }
+      .card-text {
+        font-size: 1em;
+        font-weight: 400;
+    }
+  }
+  
+}
+@media only screen and (max-width: 1300px) and (min-width: 601px){
+  .Services-cards {
+   
+    .card-title {
+      font-size:1.5em;
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: 1.3em;
+      font-weight: 400;
+  }
+}
+
+}
+}
+.page-footer{
+  background-color: $primary !important;
+  font-family: Montserrat, sans-serif;
+  p{
+    line-height: 1;
+  }  
+  .credit-contents{
+      position: absolute;
+      bottom: 0;
+      font-size: 0.7em;
+    }
+  .footer-copyright{
+    a{
+      text-decoration: underline;
+    }
+
+  }
+  .list-unstyled{
+    line-height:1.8;
+    
+  }
+}
+.form{
+  margin-top:2%;
+
+
+ 
+  .form-heading{
+    font-weight:600;
+    font-size:55px;
+  }
+      .label_input{
+        color:$secondary;
+      }
+     
+}
+.row{
+  margin-right:0 !important;
+  margin-left:0 !important;
+}
+.text-uppercase{
+  font-weight:600;
+}
+.form-input{
+  padding-left:0 !important ; 
+}
