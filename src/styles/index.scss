@@ -8,6 +8,7 @@
 }
 
 body {
+  min-width: 100vw;
   color: $secondary;
   background-color: $primary;
   font-family: $primary-font;
@@ -29,11 +30,26 @@ label{
   margin-right:0 !important;
   padding-left:0 !important;
   padding-right:0 !important;
-  margin-top:3%;
+  margin-top:7%;   
+}
+.form-part-1{
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.form-name {
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
 }
 .form-email{
-  margin-top:3%;
+ 
 
+
+  margin-right:0 !important;
+  padding-right:0 !important;
 }
 
 @media  (max-width: 770px) {
@@ -45,6 +61,22 @@ label{
     padding-left:0 !important;
     padding-right:0 !important;
   }
+  // .form-title-text{
+  //   visibility: hidden;
+  // }
+}
+@media  (max-width: 1000px) {
+  
+  .form-email{
+    
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+  // .form-title-text{
+  //   visibility: hidden;
+  // }
 }
 
 .secondary-text{
@@ -53,6 +85,13 @@ label{
 .map-image{
   width:100%;
   position: relative;
-  left:50%;
+  left:50%; 
   transform: translateX(-50%);
+}
+.form-title-text{
+  font-size:4vh;
+  font-weight: 700;
+}
+.image-logo{
+  height:80px;
 }

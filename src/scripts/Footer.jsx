@@ -75,7 +75,7 @@ class Footer extends Component {
             </div>
           </div>
           <div class="footer-copyright text-center py-3">
-            © 2019 Copyright: powered by
+            © 2019 Copyright<span style={{color:'transparent'}}>rstuc</span>; powered by
             <a href="https://perplexed.tech">
               {" "}
               perplexed.tech

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import graphic from "../assests/graphic.svg";
-
+import logo from "../assests/logo.png";
 class Upper extends Component {
   render() {
     return (
@@ -8,7 +8,10 @@ class Upper extends Component {
         <div className="container">
           <div className="row">
             <div className="main-div-additional responsive-font-size col-sm-12 col-m-6 col-lg-6">
+            <div className="row">
+            {/* <h1 className="main-div-text"><img className="image-logo" src={logo} alt=""/></h1> */}
               <h1 className="main-div-text">Traan</h1>
+            </div>
               <h2 className="text-break">
                 {" "}
                 Healing in a matter of time, but it is sometimes also a matter
@@ -26,7 +29,7 @@ class Upper extends Component {
               <a href="https://traan.in/traan_contact/index.html">
               <button
                 type="button"
-                className="main-div-button-set btn  waves-effect"
+                className="main-div-button-set btn emergency waves-effect"
               >
                 I am in an Emergency{" "}
                 
