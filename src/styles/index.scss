@@ -89,9 +89,14 @@ label{
   transform: translateX(-50%);
 }
 .form-title-text{
-  font-size:4vh;
-  font-weight: 700;
+  font-size:calc(2em + 1vw);
+  font-weight: 500;
 }
 .image-logo{
   height:80px;
+}
+
+h2.contact{
+  font-size:calc(2em + 1vw) !important;
+
 }
