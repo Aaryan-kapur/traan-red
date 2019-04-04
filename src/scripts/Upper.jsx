@@ -9,7 +9,7 @@ class Upper extends Component {
           <div className="row">
             <div className="main-div-additional responsive-font-size col-sm-12 col-m-6 col-lg-6">
             <div className="row">
-            {/* <h1 className="main-div-text"><img className="image-logo" src={logo} alt=""/></h1> */}
+            <h1 className="main-div-text"><img className="image-logo" src={logo} alt=""/></h1>
               <h1 className="main-div-text">Traan</h1>
             </div>
               <h2 className="text-break">

@@ -59,21 +59,25 @@
   }
 }
 .Services {
-  background-color: $secondary;
-  color: $tertiary;
+  // background-color: $secondary;
+  // color: $tertiary;
   padding: 3vh 0;
   
     .heading {
     text-align: center;
     font-weight: 500;
     font-size: calc(2em + 4vw);
-    color: $tertiary;
+    // color: $tertiary;  
   }
 
   .row{
     margin: 4vh 0;
   }
   .Services-cards {
+  // ;
+  // PADDING:10PX; 
+  background-color: $primary;
+  color: $secondary;
     
     box-shadow: none;
     .card-title {
@@ -81,6 +85,7 @@
       font-weight: 600;
     }
     .card-text {
+
       font-size: calc(1.4vw);
       font-weight: 400;
   }
