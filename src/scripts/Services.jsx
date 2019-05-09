@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import WOW from "wowjs";
 import badal from "../assests/red2.svg";
+import badal1 from "../assests/red1.svg";
+
 import badal2 from "../assests/red3.svg";
 import serviceSources from "./servicesSources";
-
 class Service extends Component {
   render() {
     return (
@@ -32,6 +34,10 @@ const serviceItems = serviceSources.map(source => (
 ));
 
 class Services extends Component {
+  componentDidMount() {
+    new WOW.WOW().init();
+    
+  }
   render() {
     return (
       <React.Fragment>
@@ -39,9 +45,29 @@ class Services extends Component {
           <div className="container">
             <h1 className="heading">Our Services</h1>
 
-            <div className="row">{serviceItems}</div>
+            {/* <div className="row wow fadeInUp">{serviceItems}</div> */}
+          
+          <div className="container">
             <div className="row">
-              <div className="col-6 col-sm-6 col-md-7 col-lg-7 ">
+              <div className="card-image col-5 col-sm-5 col-md-5 col-lg-5  wow fadeInLeft ">
+                <img src={badal1} alt=" " />
+              </div>
+              <div className="col-6 col-sm-6 col-md-7 col-lg-7  wow fadeInUp">
+                <div className="card Services-cards">
+                  <h4 className="card-title">
+                    <a>
+                    Extensive network of volunteers, hospitals, and doctors<sup>*</sup>
+                    </a>
+                  </h4>
+                  <p className="card-text">
+                  Our extensive network of volunteers, hospitals and doctors, ensure that you get the best care possible in the nick of time
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div className="row">
+              <div className="col-6 col-sm-6 col-md-7 col-lg-7  wow fadeInUp">
                 <div className="card Services-cards">
                   <h4 className="card-title">
                     <a>
@@ -55,17 +81,17 @@ class Services extends Component {
                   </p>
                 </div>
               </div>
-              <div className="card-image col-5 col-sm-5 col-md-5 col-lg-5">
-                <img src={badal} alt=" " />
+              <div className="card-image col-5 col-sm-5 col-md-5 col-lg-5 wow fadeInRight " data-wow-delay="0.5s">
+                <img src={badal} />
               </div>
             </div>
           </div>
           <div className="container">
             <div className="row">
-              <div className="card-image col-5 col-sm-5 col-md-5 col-lg-5">
+              <div className="card-image col-5 col-sm-5 col-md-5 col-lg-5  wow fadeInLeft ">
                 <img src={badal2} alt=" " />
               </div>
-              <div className="col-6 col-sm-6 col-md-7 col-lg-7">
+              <div className="col-6 col-sm-6 col-md-7 col-lg-7  wow fadeInUp">
                 <div className="card Services-cards">
                   <h4 className="card-title">
                     <a>

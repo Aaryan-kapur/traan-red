@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aos": "^2.3.4",
     "express": "^4.16.4",
     "mdbreact": "^4.11.1",
     "node-sass": "^4.11.0",
     "query-string": "^6.4.2",
     "react": "^16.8.6",
+    "react-aos": "^1.0.1",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "wow.js": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
