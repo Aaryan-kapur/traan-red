@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import WOW from"wowjs";
 import graphic from "../assests/graphic.svg";
 import logo from "../assests/logo.png";
-import WOW from"wowjs";
 class Upper extends Component {
   componentDidMount() {
     new WOW.WOW().init();
