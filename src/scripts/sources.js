@@ -4,6 +4,7 @@ import card3 from "../assests/Card3.svg"
 
 const cardSources =  [
   {
+    wow:  "0s",
     title: "Hospitals",
     card: card1,
     textBelow: 'Register Here',
@@ -11,6 +12,7 @@ const cardSources =  [
     cardLink:"https://traan.in/register-hospital"
   },
   {
+    wow:"0.25s" ,
     title: "Doctors",
     card: card2,
     textBelow: 'Register Here',
@@ -19,6 +21,7 @@ const cardSources =  [
 
   },
   {
+    wow:"0.75s" ,
     title: "Volunteers",
     card: card3,
     textBelow: 'Register Here',

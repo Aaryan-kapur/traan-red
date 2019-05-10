@@ -1,31 +1,36 @@
 import React, { Component } from "react";
+import WOW from "wowjs";
 import map from "../assests/map.png";
 import { MDBInput } from "mdbreact";
 
 class Form extends Component {
+  componentDidMount() {
+    new WOW.WOW().init();
+    
+  }
   render() {
     return (
       <div className="container form">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-12">
             <section style={{paddingTop:'2vh'}}>
-              <h2 className="contact font-weight-bold text-left">
+              <h2 className="contact font-weight-bold text-left wow fadeIn">
                 Contact Us
               </h2>
-              <p className="text-left secondary-text">It's Easy. Promise.</p>
+              <p className="text-left secondary-text wow fadeIn "data-wow-delay="0.5s">It's Easy. Promise.</p>
             </section>
           </div>
         </div>
         <div className="row ">
-          <div className="col-sm-12 col-md-12 col-lg-6">
+          <div className="col-sm-12 col-md-12 col-lg-6 wow fadeInLeft">
             <img src={map} className="map-image" />
           </div>
 
           <div className="col-sm-12 col-md-12 col-lg-6">
             <form id="" name="contact-form">
-              <p className="text-center form-title-text">Fill the form</p>
+              <p className="text-center form-title-text wow fadeIn slow">Fill the form</p>
               <div className="row form-part-1">
-                <div className="md-form col-md-12 col-lg-6 form-name">
+                <div className="md-form col-md-12 col-lg-6 form-name wow fadeIn slow" data-wow-delay="0.2s">
                   <MDBInput
                     type="text"
                     id="name"
@@ -35,7 +40,7 @@ class Form extends Component {
                   />
                 </div>
 
-                <div className="col-md-12  col-lg-6 md-form form-email ">
+                <div className="col-md-12  col-lg-6 md-form form-email  wow fadeIn slow" data-wow-delay="0.2s">
                   <MDBInput
                     type="text"
                     id="email"
@@ -47,7 +52,7 @@ class Form extends Component {
               </div>
 
               <div className="row">
-                <div className="col-md-12 form-house">
+                <div className="col-md-12 form-house  wow fadeIn slow" data-wow-delay="0.4s">
                   <div className="md-form">
                     <MDBInput
                       type="text"
@@ -60,7 +65,7 @@ class Form extends Component {
                 </div>
               </div>
               <div className="row ">
-                <div className="col-md-12 form-house">
+                <div className="col-md-12 form-house  wow fadeIn slow" data-wow-delay="0.6s">
                   <div className="md-form ">
                     <MDBInput
                       type="text"
@@ -72,7 +77,7 @@ class Form extends Component {
                   </div>
                 </div>
 
-                <div className="text-center  form-house ">
+                <div className="text-center  form-house  wow fadeIn slow" data-wow-delay="0.8s">
                   <a
                     className="btn btn-danger  "
                     onclick="document.getElementById('contact-form').submit();"

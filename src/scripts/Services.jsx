@@ -43,7 +43,7 @@ class Services extends Component {
       <React.Fragment>
         <div className="Services">
           <div className="container">
-            <h1 className="heading">Our Services</h1>
+            <h1 className="heading wow fadeIn slow">Our Services</h1>
 
             {/* <div className="row wow fadeInUp">{serviceItems}</div> */}
           

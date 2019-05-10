@@ -6,7 +6,7 @@ import cardSources from './sources';
 
 class Card extends Component {
     render() {
-        return <div className="card1 col-sm-12 col-m-4 col-lg-4">
+        return <div className="wow fadeInUp  card1 col-sm-12 col-m-4 col-lg-4" data-wow-delay={this.props.wow} >
             <div className="card card-cascade wider">
 
                 <div className="view view-cascade overlay">
@@ -38,7 +38,7 @@ class Card extends Component {
 }
 
 const cardItems = cardSources.map((source =>
-    <Card title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} cardsLink={source.cardLink}/>
+    <Card wow={source.wow} title={source.title} card={source.card} textBelow={source.textBelow} cardText={source.cardText} cardsLink={source.cardLink}/>
 ))
 
 class Cards extends Component {
@@ -47,7 +47,7 @@ class Cards extends Component {
             <div className="cards-clients">
 
                 <div className="container">
-                    <h1 className='heading'>Our Users</h1>
+                    <h1 className='heading wow fadeIn slow'>Our Users</h1>
                     <div className="row">
                         {cardItems}
                     </div>
