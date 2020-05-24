@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "aaryan-kapur.github.io/traan-red/precache-manifest.567cd9499777b8d6d1a0a611981760a6.js"
+  "/traan-red/precache-manifest.3b6b31ad0066f9683e7547468e5f41d8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("aaryan-kapur.github.io/traan-red/index.html", {
+workbox.routing.registerNavigationRoute("/traan-red/index.html", {
   
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
