@@ -1,11 +1,12 @@
 {
+  "homepage":"https://aaryan-kapur.github.io/traan-red",
   "name": "01-barebones",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "express": "^4.16.4",
     "mdbreact": "^4.11.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.0",
     "query-string": "^6.4.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
