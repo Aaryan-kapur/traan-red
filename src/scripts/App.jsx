@@ -14,7 +14,6 @@ class App extends Component {
       <React.Fragment>
         <Upper />
         <Cards />
-
         <Services />
         <Form />
         <Footer />
